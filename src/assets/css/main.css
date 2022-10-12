@@ -1,0 +1,155 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.bg {
+  background-image: url(../img//bg.png);
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg-center {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-model {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  background-color: #295f748f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.link-img {
+  width: 50px;
+  height: 40px;
+}
+
+
+.container {
+  height: 100%;
+  padding: 20px 0px;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 800px;
+  height: calc(100% - 50px);
+}
+
+.logo {
+  height: 200px;
+  margin-top: -50px;
+}
+
+.text {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.account {
+  margin-bottom: 5%;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-btn {
+  border-radius: 0px !important;
+  color: #205f8e !important;
+  text-transform: uppercase;
+  background-color: white !important;
+  font-size: 30px !important;
+  padding: 20px 40px !important;
+  height: 55px !important;
+}
+
+.count-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  margin: 0px 20px;
+}
+
+.count-btn {
+  border-radius: 50px;
+  background-color: #00ffd0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  border: unset;
+  line-height: 1;
+}
+
+.wallet-adapter-dropdown-list {
+  top: -170px !important;
+  background: #ffffff !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+}
+
+.wallet-adapter-dropdown-list-item:hover {
+  background-color: #d2e6f7 !important;
+}
+
+.wallet-adapter-dropdown-list-item {
+  color: #205f8e !important;
+  border-radius: 0px !important;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.desc {
+  line-height: 1.2;
+}
+
+.minus {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}

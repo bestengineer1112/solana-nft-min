@@ -1,0 +1,17 @@
+import { Connection, PublicKey } from '@solana/web3.js'
+import { programs } from '@metaplex/js'
+const { Metadata, MetadataData } =
+    programs.metadata
+
+export const getMetadata = async (
+    connection: Connection,
+    mint: PublicKey,
+)  => {
+    let metadaPDA = await Metadata.getPDA(mint)
+    const metadataAccount = await connection.getAccountInfo(metadaPDA)
+    if (metadataAccount) {
+        return MetadataData.deserialize(metadataAccount.data)
+    } else {
+        return null
+    }
+}
